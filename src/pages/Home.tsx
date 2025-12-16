@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Star, Search, TrendingUp, Shield, Clock, ArrowRight } from 'lucide-react';
+import { Star, Search, TrendingUp, Shield, Clock, ArrowRight, Briefcase, ShoppingBag } from 'lucide-react';
 import { gigApi, categoryApi, userApi } from '@/services/api';
 import type { Gig, Category } from '@/types/types';
 
@@ -42,6 +42,7 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button size="lg" variant="outline" onClick={() => navigate('/login/seller')} className="text-lg px-8">
+                <Briefcase className="mr-2 h-5 w-5" />
                 Offer Services
               </Button>
             </div>
@@ -193,9 +194,11 @@ export default function Home() {
           </p>
           <div className="flex flex-col xl:flex-row gap-4 justify-center">
             <Button size="lg" variant="secondary" onClick={() => navigate('/signup/buyer')}>
+              <ShoppingBag className="mr-2 h-5 w-5" />
               Sign Up as Buyer
             </Button>
             <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" onClick={() => navigate('/signup/seller')}>
+              <Briefcase className="mr-2 h-5 w-5" />
               Sign Up as Seller
             </Button>
           </div>
