@@ -9,6 +9,7 @@ import SignupSeller from './pages/SignupSeller';
 import BrowseGigs from './pages/BrowseGigs';
 import GigDetails from './pages/GigDetails';
 import CreateGig from './pages/CreateGig';
+import EditGig from './pages/EditGig';
 import SellerDashboard from './pages/SellerDashboard';
 import BuyerDashboard from './pages/BuyerDashboard';
 import AdminDashboard from './pages/AdminDashboard';
@@ -82,6 +83,12 @@ const routes: RouteConfig[] = [
     name: 'Create Gig',
     path: '/seller/create-gig',
     element: <CreateGig />,
+    visible: false,
+  },
+  {
+    name: 'Edit Gig',
+    path: '/seller/edit-gig/:id',
+    element: <EditGig />,
     visible: false,
   },
   {
