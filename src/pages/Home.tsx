@@ -37,12 +37,12 @@ export default function Home() {
               Connect with talented professionals and get your projects done with quality and speed
             </p>
             <div className="flex flex-col xl:flex-row gap-4 justify-center">
-              <Button size="lg" onClick={() => navigate('/browse')} className="text-lg px-8">
-                Browse Services
+              <Button size="lg" onClick={() => navigate('/login/buyer')} className="text-lg px-8">
+                Hire Freelancers
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button size="lg" variant="outline" onClick={() => navigate('/signup')} className="text-lg px-8">
-                Become a Seller
+              <Button size="lg" variant="outline" onClick={() => navigate('/login/seller')} className="text-lg px-8">
+                Offer Services
               </Button>
             </div>
           </div>
@@ -192,11 +192,11 @@ export default function Home() {
             Join thousands of satisfied clients and talented freelancers
           </p>
           <div className="flex flex-col xl:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" onClick={() => navigate('/signup')}>
-              Sign Up Now
+            <Button size="lg" variant="secondary" onClick={() => navigate('/signup/buyer')}>
+              Sign Up as Buyer
             </Button>
-            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" onClick={() => navigate('/browse')}>
-              Explore Services
+            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" onClick={() => navigate('/signup/seller')}>
+              Sign Up as Seller
             </Button>
           </div>
         </div>

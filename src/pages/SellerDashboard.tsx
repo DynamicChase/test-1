@@ -17,7 +17,7 @@ export default function SellerDashboard() {
   useEffect(() => {
     const user = authApi.getCurrentUser();
     if (!user || (user.role !== 'seller' && user.role !== 'admin')) {
-      navigate('/login');
+      navigate('/login/seller');
       return;
     }
     setCurrentUser(user);

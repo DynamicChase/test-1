@@ -1,9 +1,14 @@
 import type { ReactNode } from 'react';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import LoginBuyer from './pages/LoginBuyer';
+import LoginSeller from './pages/LoginSeller';
 import Signup from './pages/Signup';
+import SignupBuyer from './pages/SignupBuyer';
+import SignupSeller from './pages/SignupSeller';
 import BrowseGigs from './pages/BrowseGigs';
 import GigDetails from './pages/GigDetails';
+import CreateGig from './pages/CreateGig';
 import SellerDashboard from './pages/SellerDashboard';
 import BuyerDashboard from './pages/BuyerDashboard';
 import AdminDashboard from './pages/AdminDashboard';
@@ -44,9 +49,39 @@ const routes: RouteConfig[] = [
     visible: false,
   },
   {
+    name: 'Login Buyer',
+    path: '/login/buyer',
+    element: <LoginBuyer />,
+    visible: false,
+  },
+  {
+    name: 'Login Seller',
+    path: '/login/seller',
+    element: <LoginSeller />,
+    visible: false,
+  },
+  {
     name: 'Signup',
     path: '/signup',
     element: <Signup />,
+    visible: false,
+  },
+  {
+    name: 'Signup Buyer',
+    path: '/signup/buyer',
+    element: <SignupBuyer />,
+    visible: false,
+  },
+  {
+    name: 'Signup Seller',
+    path: '/signup/seller',
+    element: <SignupSeller />,
+    visible: false,
+  },
+  {
+    name: 'Create Gig',
+    path: '/seller/create-gig',
+    element: <CreateGig />,
     visible: false,
   },
   {

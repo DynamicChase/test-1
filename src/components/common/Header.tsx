@@ -121,11 +121,11 @@ export default function Header() {
               </>
             ) : (
               <div className="hidden xl:flex items-center gap-2">
-                <Button variant="ghost" onClick={() => navigate('/login')}>
-                  Sign In
+                <Button variant="ghost" onClick={() => navigate('/login/buyer')}>
+                  Hire Freelancers
                 </Button>
-                <Button onClick={() => navigate('/signup')}>
-                  Join Now
+                <Button onClick={() => navigate('/login/seller')}>
+                  Offer Services
                 </Button>
               </div>
             )}
@@ -195,11 +195,11 @@ export default function Header() {
                     </>
                   ) : (
                     <>
-                      <Button variant="outline" onClick={() => navigate('/login')}>
-                        Sign In
+                      <Button variant="outline" onClick={() => navigate('/login/buyer')}>
+                        Hire Freelancers
                       </Button>
-                      <Button onClick={() => navigate('/signup')}>
-                        Join Now
+                      <Button onClick={() => navigate('/login/seller')}>
+                        Offer Services
                       </Button>
                     </>
                   )}
